@@ -16,8 +16,8 @@ importers:
 
   packages/all:
     specifiers:
-      '@dmy147/eslint-config-react': ^0.16.1
-      '@dmy147/eslint-config-vue': ^0.16.1
+      '@dmy147/eslint-config-react': ^0.17.0
+      '@dmy147/eslint-config-vue': ^0.17.0
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^8.7.0
@@ -68,6 +68,7 @@ importers:
       eslint-plugin-unicorn: ^40.1.0
       eslint-plugin-yml: ^0.12.0
       jsonc-eslint-parser: ^2.1.0
+      prettier: ^2.5.1
       yaml-eslint-parser: ^0.5.0
     dependencies:
       eslint-config-prettier: 8.4.0_eslint@8.7.0
@@ -77,18 +78,19 @@ importers:
       eslint-plugin-import: 2.25.4_eslint@8.7.0
       eslint-plugin-jsonc: 2.0.0_eslint@8.7.0
       eslint-plugin-n: 14.0.0_eslint@8.7.0
-      eslint-plugin-prettier: 4.0.0_a66a04561db36a053c7789bfeabe49f3
+      eslint-plugin-prettier: 4.0.0_f08adf3c6fbacbe384761260ffe5da42
       eslint-plugin-promise: 6.0.0_eslint@8.7.0
       eslint-plugin-unicorn: 40.1.0_eslint@8.7.0
       eslint-plugin-yml: 0.12.0_eslint@8.7.0
       jsonc-eslint-parser: 2.1.0
+      prettier: 2.5.1
       yaml-eslint-parser: 0.5.0
     devDependencies:
       eslint: 8.7.0
 
   packages/react:
     specifiers:
-      '@dmy147/eslint-config-ts': ^0.16.1
+      '@dmy147/eslint-config-ts': ^0.17.0
       eslint: ^8.7.0
       eslint-plugin-react: ^7.28.0
       react: ^17.0.2
@@ -103,7 +105,7 @@ importers:
 
   packages/react-native:
     specifiers:
-      '@dmy147/eslint-config-react': ^0.16.1
+      '@dmy147/eslint-config-react': ^0.17.0
       eslint: ^8.7.0
       eslint-plugin-react-native: ^4.0.0
       react: ^17.0.2
@@ -118,20 +120,26 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@dmy147/eslint-config-basic': ^0.16.1
+      '@dmy147/eslint-config-basic': ^0.17.0
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^8.7.0
+      eslint-config-prettier: ^8.4.0
+      eslint-plugin-prettier: ^4.0.0
+      prettier: ^2.5.1
     dependencies:
       '@dmy147/eslint-config-basic': link:../basic
       '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
       '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
+      eslint-config-prettier: 8.4.0_eslint@8.7.0
+      eslint-plugin-prettier: 4.0.0_f08adf3c6fbacbe384761260ffe5da42
+      prettier: 2.5.1
     devDependencies:
       eslint: 8.7.0
 
   packages/vue:
     specifiers:
-      '@dmy147/eslint-config-ts': ^0.16.1
+      '@dmy147/eslint-config-ts': ^0.17.0
       eslint: ^8.7.0
       eslint-plugin-vue: ^8.4.0
     dependencies:
@@ -2333,7 +2341,7 @@ packages:
       semver: 6.3.0
     dev: false
 
-  /eslint-plugin-prettier/4.0.0_a66a04561db36a053c7789bfeabe49f3:
+  /eslint-plugin-prettier/4.0.0_f08adf3c6fbacbe384761260ffe5da42:
     resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
@@ -2346,6 +2354,7 @@ packages:
     dependencies:
       eslint: 8.7.0
       eslint-config-prettier: 8.4.0_eslint@8.7.0
+      prettier: 2.5.1
       prettier-linter-helpers: 1.0.0
     dev: false
 
@@ -4517,6 +4526,12 @@ packages:
     engines: {node: '>=6.0.0'}
     dependencies:
       fast-diff: 1.2.0
+    dev: false
+
+  /prettier/2.5.1:
+    resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: false
 
   /process-nextick-args/2.0.1:
