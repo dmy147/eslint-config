@@ -1,5 +1,5 @@
 {
-  "name": "@dmy/eslint-config-react",
+  "name": "@dmy147/eslint-config-react",
   "version": "0.16.1",
   "description": "",
   "keywords": [],
@@ -19,7 +19,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@dmy/eslint-config-ts": "^0.16.1",
+    "@dmy147/eslint-config-ts": "^0.16.1",
     "eslint-plugin-react": "^7.28.0"
   },
   "devDependencies": {

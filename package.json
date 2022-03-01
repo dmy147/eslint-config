@@ -1,16 +1,15 @@
 {
-  "name": "@dmy/eslint-config-monorepo",
+  "name": "@dmy147/eslint-config-monorepo",
   "version": "0.1.0",
   "license": "MIT",
   "author": "DMY (https://github.com/dmy147/)",
-  "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "lint": "npx eslint --ext .js,.json,.vue --fix .",
     "release": "lerna publish --conventional-commits"
   },
   "devDependencies": {
-    "@dmy/eslint-config": "*",
+    "@dmy147/eslint-config": "*",
     "eslint": "^8.7.0",
     "lerna": "^4.0.0",
     "typescript": "^4.5.5"

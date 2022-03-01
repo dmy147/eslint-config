@@ -1,5 +1,5 @@
 {
-  "name": "@dmy/eslint-config-ts",
+  "name": "@dmy147/eslint-config-ts",
   "version": "0.16.1",
   "description": "",
   "keywords": [],
@@ -17,7 +17,7 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@dmy/eslint-config-basic": "^0.16.1",
+    "@dmy147/eslint-config-basic": "^0.16.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1"
   },
