@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.18.0](https://github.com/dmy147/eslint-config/compare/v0.17.0...v0.18.0) (2022-03-01)
+
+
+### Features
+
+* turns off all rules that are unnecessary or might conflict with Prettier ([2f8178f](https://github.com/dmy147/eslint-config/commit/2f8178f48aa67e2c7296d20166dc1f68f4d0a906))
+
+
+
+
+
 # [0.17.0](https://github.com/dmy147/eslint-config/compare/v0.16.1...v0.17.0) (2022-03-01)
 
 **Note:** Version bump only for package @dmy147/eslint-config-react
