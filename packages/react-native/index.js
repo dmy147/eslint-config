@@ -1,4 +1,4 @@
 module.exports = {
-  extends: ["@antfu/eslint-config-react", "plugin:react-native/all"],
+  extends: ["@dmy/eslint-config-react", "plugin:react-native/all"],
   plugins: ["react-native"],
 };

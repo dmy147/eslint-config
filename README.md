@@ -1,13 +1,13 @@
-# @antfu/eslint-config
+# @dmy/eslint-config
 
-[![npm](https://img.shields.io/npm/v/@antfu/eslint-config)](https://npmjs.com/package/@antfu/eslint-config)
+Project forked [![npm](https://img.shields.io/npm/v/@dmy/eslint-config)](https://npmjs.com/package/@antfu/eslint-config)
 
 ## Usage
 
 ### Install
 
 ```bash
-pnpm add -D eslint @antfu/eslint-config
+pnpm add -D eslint @dmy/eslint-config
 ```
 
 ### Config `.eslintrc`
@@ -15,7 +15,7 @@ pnpm add -D eslint @antfu/eslint-config
 ```json
 {
   "extends": [
-    "@antfu"
+    "@dmy"
   ]
 }
 ```
