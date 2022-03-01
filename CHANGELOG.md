@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.19.0](https://github.com/dmy147/eslint-config/compare/v0.18.0...v0.19.0) (2022-03-01)
+
+
+### Features
+
+* remove @typescript-eslint/comma-dangle ([fa026d9](https://github.com/dmy147/eslint-config/commit/fa026d91fe77d773497c73ececcf6a407d0cff0c))
+
+
+
+
+
 # [0.18.0](https://github.com/dmy147/eslint-config/compare/v0.17.0...v0.18.0) (2022-03-01)
 
 
