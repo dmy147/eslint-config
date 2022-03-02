@@ -7,9 +7,9 @@ Project forked [![npm](https://img.shields.io/npm/v/@antfu/eslint-config)](https
 ### Install
 
 ```bash
-pnpm add -D prettier eslint @dmy147/eslint-config 
+pnpm add -D prettier eslint @dmy147/eslint-config
 
-# for react native 
+# for react native
 pnpm add -D prettier eslint @dmy147/eslint-config-react-native
 ```
 

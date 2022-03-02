@@ -12,10 +12,7 @@ module.exports = {
     'plugin:yml/standard',
     'plugin:prettier/recommended',
   ],
-  plugins: [
-    'html',
-    'unicorn',
-  ],
+  plugins: ['html', 'unicorn'],
   settings: {
     'import/resolver': {
       node: { extensions: ['.js', '.mjs', '.ts', '.d.ts'] },
@@ -26,7 +23,7 @@ module.exports = {
       files: ['*.json', '*.json5'],
       parser: 'jsonc-eslint-parser',
       rules: {
-        'quotes': ['error', 'double'],
+        quotes: ['error', 'double'],
         'quote-props': ['error', 'always'],
         'comma-dangle': ['error', 'never'],
       },
@@ -112,17 +109,12 @@ module.exports = {
     // Common
     'no-unused-vars': 'warn',
     'no-param-reassign': 'off',
-    'camelcase': 'off',
+    camelcase: 'off',
     'no-constant-condition': 'warn',
     'no-debugger': 'error',
     'no-console': ['error', { allow: ['warn', 'error'] }],
     'no-cond-assign': ['error', 'always'],
-    'no-restricted-syntax': [
-      'error',
-      'DebuggerStatement',
-      'LabeledStatement',
-      'WithStatement',
-    ],
+    'no-restricted-syntax': ['error', 'DebuggerStatement', 'LabeledStatement', 'WithStatement'],
     'no-return-await': 'off',
 
     // es6
@@ -152,24 +144,28 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'spaced-comment': ['error', 'always', {
-      line: {
-        markers: ['/'],
-        exceptions: ['/', '#'],
+    'spaced-comment': [
+      'error',
+      'always',
+      {
+        line: {
+          markers: ['/'],
+          exceptions: ['/', '#'],
+        },
+        block: {
+          markers: ['!'],
+          exceptions: ['*'],
+          balanced: true,
+        },
       },
-      block: {
-        markers: ['!'],
-        exceptions: ['*'],
-        balanced: true,
-      },
-    }],
+    ],
 
     // best-practice
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'consistent-return': 'off',
-    'complexity': ['off', 11],
-    'eqeqeq': ['error', 'smart'],
+    complexity: ['off', 11],
+    eqeqeq: ['error', 'smart'],
     'no-alert': 'warn',
     'no-case-declarations': 'error',
     'no-multi-spaces': 'error',

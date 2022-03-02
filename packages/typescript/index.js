@@ -2,11 +2,7 @@
 const basic = require('@dmy147/eslint-config-basic')
 
 module.exports = {
-  extends: [
-    '@dmy147/eslint-config-basic',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended'
-  ],
+  extends: ['@dmy147/eslint-config-basic', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   overrides: basic.overrides,
   rules: {
     'import/named': 'off',

@@ -8,12 +8,14 @@ importers:
       eslint: ^8.7.0
       husky: ^7.0.4
       lerna: ^4.0.0
+      prettier: ^2.5.1
       typescript: ^4.5.5
     devDependencies:
       '@dmy147/eslint-config': link:packages/all
       eslint: 8.7.0
       husky: 7.0.4
       lerna: 4.0.0
+      prettier: 2.5.1
       typescript: 4.5.5
 
   packages/all:
@@ -4551,7 +4553,6 @@ packages:
     resolution: {integrity: sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}
