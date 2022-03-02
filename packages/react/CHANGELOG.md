@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/dmy147/eslint-config/compare/v0.19.0...v0.20.0) (2022-03-02)
+
+
+### Features
+
+* **react:** add eslint-plugin-react-hooks ([9fae7c4](https://github.com/dmy147/eslint-config/commit/9fae7c4a06b21d0274b9302bedefc7c892b71cbe))
+
+
+
+
+
 # [0.19.0](https://github.com/dmy147/eslint-config/compare/v0.18.0...v0.19.0) (2022-03-01)
 
 **Note:** Version bump only for package @dmy147/eslint-config-react
