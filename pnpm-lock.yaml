@@ -20,8 +20,8 @@ importers:
 
   packages/all:
     specifiers:
-      '@dmy147/eslint-config-react': ^0.19.0
-      '@dmy147/eslint-config-vue': ^0.19.0
+      '@dmy147/eslint-config-react': ^0.20.0
+      '@dmy147/eslint-config-vue': ^0.20.0
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^8.7.0
@@ -96,7 +96,7 @@ importers:
 
   packages/react:
     specifiers:
-      '@dmy147/eslint-config-ts': ^0.19.0
+      '@dmy147/eslint-config-ts': ^0.20.0
       eslint: ^8.7.0
       eslint-plugin-react: ^7.28.0
       react: ^17.0.2
@@ -111,7 +111,7 @@ importers:
 
   packages/react-native:
     specifiers:
-      '@dmy147/eslint-config-react': ^0.19.0
+      '@dmy147/eslint-config-react': ^0.20.0
       eslint: ^8.7.0
       eslint-plugin-react-native: ^4.0.0
       react: ^17.0.2
@@ -126,11 +126,12 @@ importers:
 
   packages/typescript:
     specifiers:
-      '@dmy147/eslint-config-basic': ^0.19.0
+      '@dmy147/eslint-config-basic': ^0.20.0
       '@typescript-eslint/eslint-plugin': ^5.10.1
       '@typescript-eslint/parser': ^5.10.1
       eslint: ^8.7.0
       eslint-config-prettier: ^8.4.0
+      eslint-import-resolver-typescript: ^2.5.0
       eslint-plugin-prettier: ^4.0.0
       prettier: ^2.5.1
     dependencies:
@@ -138,6 +139,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
       '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
       eslint-config-prettier: 8.4.0_eslint@8.7.0
+      eslint-import-resolver-typescript: 2.5.0_eslint@8.7.0
       eslint-plugin-prettier: 4.0.0_f08adf3c6fbacbe384761260ffe5da42
       prettier: 2.5.1
     devDependencies:
@@ -145,7 +147,7 @@ importers:
 
   packages/vue:
     specifiers:
-      '@dmy147/eslint-config-ts': ^0.19.0
+      '@dmy147/eslint-config-ts': ^0.20.0
       eslint: ^8.7.0
       eslint-plugin-vue: ^8.4.0
     dependencies:
@@ -2261,6 +2263,23 @@ packages:
       resolve: 1.20.0
     dev: false
 
+  /eslint-import-resolver-typescript/2.5.0_eslint@8.7.0:
+    resolution: {integrity: sha512-qZ6e5CFr+I7K4VVhQu3M/9xGv9/YmwsEXrsm3nimw8vWaVHRDrQRp26BgCypTxBp3vUp4o5aVEJRiy0F2DFddQ==}
+    engines: {node: '>=4'}
+    peerDependencies:
+      eslint: '*'
+      eslint-plugin-import: '*'
+    dependencies:
+      debug: 4.3.2
+      eslint: 8.7.0
+      glob: 7.2.0
+      is-glob: 4.0.3
+      resolve: 1.20.0
+      tsconfig-paths: 3.12.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /eslint-module-utils/2.7.2:
     resolution: {integrity: sha512-zquepFnWCY2ISMFwD/DqzaM++H+7PDzOpUvotJWm/y1BAFt5R4oeULgdrTejKqLkz7MA/tgstsUMNYc7wNdTrg==}
     engines: {node: '>=4'}
@@ -2774,7 +2793,6 @@ packages:
 
   /fs.realpath/1.0.0:
     resolution: {integrity: sha1-FQStJSMVjKpA20onh8sBQRmU6k8=}
-    dev: true
 
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
@@ -2926,6 +2944,17 @@ packages:
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
+
+  /glob/7.2.0:
+    resolution: {integrity: sha512-lmLf6gtyrPq8tTjSmrO94wBeQbFR3HbLHbuyD69wuyQkImp2hWqMGB47OX65FBkPffO641IP9jWa1z4ivqG26Q==}
+    dependencies:
+      fs.realpath: 1.0.0
+      inflight: 1.0.6
+      inherits: 2.0.4
+      minimatch: 3.0.4
+      once: 1.4.0
+      path-is-absolute: 1.0.1
+    dev: false
 
   /globals/11.12.0:
     resolution: {integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==}
@@ -3188,11 +3217,9 @@ packages:
     dependencies:
       once: 1.4.0
       wrappy: 1.0.2
-    dev: true
 
   /inherits/2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
-    dev: true
 
   /ini/1.3.5:
     resolution: {integrity: sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==}
@@ -4241,7 +4268,6 @@ packages:
     resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=}
     dependencies:
       wrappy: 1.0.2
-    dev: true
 
   /onetime/5.1.2:
     resolution: {integrity: sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==}
@@ -4455,7 +4481,6 @@ packages:
   /path-is-absolute/1.0.1:
     resolution: {integrity: sha1-F0uSaHNVNP+8es5r9TpanhtcX18=}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /path-key/3.1.1:
     resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
@@ -5667,7 +5692,6 @@ packages:
 
   /wrappy/1.0.2:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
-    dev: true
 
   /write-file-atomic/2.4.3:
     resolution: {integrity: sha512-GaETH5wwsX+GcnzhPgKcKjJ6M2Cq3/iZp1WyY/X1CSqrW+jVNM9Y7D8EC2sM4ZG/V8wZlSniJnCKWPmBYAucRQ==}

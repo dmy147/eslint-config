@@ -3,6 +3,17 @@ const basic = require('@dmy147/eslint-config-basic')
 
 module.exports = {
   extends: ['@dmy147/eslint-config-basic', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+  plugins: ['import'],
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
   overrides: basic.overrides,
   rules: {
     'import/named': 'off',
