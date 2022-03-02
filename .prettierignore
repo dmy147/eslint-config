@@ -1,0 +1,12 @@
+.github/
+.husky/
+
+**/CHANGELOG.md
+
+fixture/*
+*.test.tsx
+
+package.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+lerna.json
